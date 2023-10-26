@@ -1,7 +1,7 @@
 defaultStorageMapping: DBT_GGITHIRI
 jobs: {}
 locations:
-  DBT_GGITHIRI:
+  RAW:
     mappingDefinitions:
       '2':
         database: ANALYTICS
@@ -9,21 +9,13 @@ locations:
       '3':
         database: ''
         schema: ''
-  JAFFLE_SHOP:
+  RAW_VAULT:
     mappingDefinitions:
       '2':
         database: RAW
         schema: JAFFLE_SHOP
       '3':
         database: RAW
-        schema: ''
-  STRIPE:
-    mappingDefinitions:
-      '2':
-        database: RAW
-        schema: STRIPE
-      '3':
-        database: ''
         schema: ''
 macros: {}
 packages: {}
