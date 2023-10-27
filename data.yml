@@ -7,12 +7,24 @@ locations:
       "40":
         database: SNOWFLAKE_SAMPLE_DATA
         schema: TPCH_SF1000
+      "41":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1000
   RAW_VAULT:
     mappingDefinitions:
       "40":
         database: ANALYTICS
         schema: COALESCE_VAULT
-macros: {}
+      "41":
+        database: ANALYTICS
+        schema: COALESCE_VAULT
+macros:
+  Macro-1:
+    id: "1"
+    macroString: |-
+      {% macro record_source() %}
+          'record_source'
+      {% endmacro %}
 packages: {}
 projects: {}
 stepTypes:
@@ -1838,12 +1850,12 @@ stepTypes:
             type: toggleButton
             default: true
 
-        - groupName: Data Vault
-          items:
-          - displayName: Generate Ghost Records
-            attributeName: generate_ghost_records
-            type: toggleButton
-            default: true
+        -- - groupName: Data Vault
+        --   items:
+        --   - displayName: Generate Ghost Records
+        --     attributeName: generate_ghost_records
+        --     type: toggleButton
+        --     default: false
 
         systemColumns:
         - displayName: "LDTS"

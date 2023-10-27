@@ -1,0 +1,194 @@
+steps:
+  DVSTG_ORDERS-1b0b34c3-c039-487d-b9bf-86a4c6431cb8:
+    operation:
+      config:
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: Orders data as defined by TPC-H
+      isMultisource: false
+      locationName: RAW_VAULT
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 8699042d-3ceb-4cdf-b228-2cfde7a8b5bd
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9490a727-2956-4b22-8641-5c16dfa71596
+                    stepCounter: 10e1eabf-5ca9-4be3-9bd8-cbdbad81a754
+                transform: ""
+          - columnReference:
+              columnCounter: 16dc3e88-0777-4597-8a7f-a62d54586ba3
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_CUSTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 63f614f7-9d8e-4028-8aa2-cd1c53d95989
+                    stepCounter: 10e1eabf-5ca9-4be3-9bd8-cbdbad81a754
+                transform: ""
+          - columnReference:
+              columnCounter: 66675cc9-fa98-421a-9590-e2427631bb11
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            dataType: VARCHAR(1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERSTATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 82d0cb6c-f108-4726-a7a7-e58df7a24b60
+                    stepCounter: 10e1eabf-5ca9-4be3-9bd8-cbdbad81a754
+                transform: ""
+          - columnReference:
+              columnCounter: 376fbe8d-522b-4576-ba9b-e6604cdb66ce
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_TOTALPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5bc1d829-b022-463e-9d0d-abb6e0ed908b
+                    stepCounter: 10e1eabf-5ca9-4be3-9bd8-cbdbad81a754
+                transform: ""
+          - columnReference:
+              columnCounter: 59c55a1d-1f75-40c8-9802-5e377c5fad86
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5b30692f-6afd-4184-8467-bf57061a4f14
+                    stepCounter: 10e1eabf-5ca9-4be3-9bd8-cbdbad81a754
+                transform: ""
+          - columnReference:
+              columnCounter: c5bbe260-b702-4b98-a76d-88b2a2d48b53
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            dataType: VARCHAR(15)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERPRIORITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ff07a28b-91df-4f4c-847e-dc54dbcf4fb3
+                    stepCounter: 10e1eabf-5ca9-4be3-9bd8-cbdbad81a754
+                transform: ""
+          - columnReference:
+              columnCounter: f525ff8d-2f6f-4d52-99dc-de022c878515
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            dataType: VARCHAR(15)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_CLERK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5532bc56-6f88-4e79-a82b-83fab2aba46f
+                    stepCounter: 10e1eabf-5ca9-4be3-9bd8-cbdbad81a754
+                transform: ""
+          - columnReference:
+              columnCounter: 7c82d3db-4339-4f6e-a9ea-c6b988be6b72
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_SHIPPRIORITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 232fa8b2-24d8-4df4-a872-bb7025849f17
+                    stepCounter: 10e1eabf-5ca9-4be3-9bd8-cbdbad81a754
+                transform: ""
+          - columnReference:
+              columnCounter: 36a35d00-3630-4c37-910d-3b9b62ea5096
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            dataType: VARCHAR(79)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_COMMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1a1a9964-5301-4866-8023-743f4fdcce6c
+                    stepCounter: 10e1eabf-5ca9-4be3-9bd8-cbdbad81a754
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1144d388-8473-4c31-8f6a-10ae73b243e0
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+            hashColumns: []
+            is_system_ldts: true
+            name: LDTS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: SYSDATE()
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1ddf8786-7040-4ef8-9457-220a1c54bafe
+              stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: The Record Source (RSRC) describes the source of this data.
+            hashColumns: []
+            is_system_rsrc: true
+            name: RSRC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "{{record_source()}}"
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: RAW
+                nodeName: ORDERS
+            join:
+              joinCondition: FROM {{ ref('RAW', 'ORDERS') }} "ORDERS"
+            name: DVSTG_ORDERS
+            noLinkRefs: []
+      name: DVSTG_ORDERS
+      overrideSQL: false
+      schema: ""
+      sqlType: SCALEFREE-DATAVAULT4COALESCE::4
+      type: sql
+    stepCounter: 1b0b34c3-c039-487d-b9bf-86a4c6431cb8

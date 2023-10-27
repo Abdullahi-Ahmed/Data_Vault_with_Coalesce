@@ -1,5 +1,5 @@
 steps:
-  NATION-84d0e153-cca6-45bf-8453-596a954b9e78:
+  NATION-67daaef8-0823-4e29-9789-74192a867562:
     operation:
       database: ""
       dataset: ""
@@ -14,8 +14,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 36f232c1-291f-418b-a69a-a491fac6f851
-              stepCounter: 84d0e153-cca6-45bf-8453-596a954b9e78
+              columnCounter: d636397f-1f8a-42e9-aadc-1554dbca1e3b
+              stepCounter: 67daaef8-0823-4e29-9789-74192a867562
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
@@ -29,8 +29,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b56f56fd-1938-4f97-935b-a422ddfaeba3
-              stepCounter: 84d0e153-cca6-45bf-8453-596a954b9e78
+              columnCounter: facdfcb5-e2a9-4c23-badb-8c9e910e9b02
+              stepCounter: 67daaef8-0823-4e29-9789-74192a867562
             config: {}
             dataType: VARCHAR(25)
             defaultValue: ""
@@ -44,8 +44,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: e4cbd4ee-05f0-4dcf-9d4d-4b97b631ea1e
-              stepCounter: 84d0e153-cca6-45bf-8453-596a954b9e78
+              columnCounter: 08792fd1-29c9-45af-b976-1f58a0aa438d
+              stepCounter: 67daaef8-0823-4e29-9789-74192a867562
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
@@ -59,8 +59,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: c8347db8-a3eb-452f-ab61-cb674b118c15
-              stepCounter: 84d0e153-cca6-45bf-8453-596a954b9e78
+              columnCounter: 58323f81-4872-46a3-b671-f37c974b8096
+              stepCounter: 67daaef8-0823-4e29-9789-74192a867562
             config: {}
             dataType: VARCHAR(152)
             defaultValue: ""
@@ -76,4 +76,4 @@ steps:
       sqlType: Source
       table: NATION
       type: sourceInput
-    stepCounter: 84d0e153-cca6-45bf-8453-596a954b9e78
+    stepCounter: 67daaef8-0823-4e29-9789-74192a867562
