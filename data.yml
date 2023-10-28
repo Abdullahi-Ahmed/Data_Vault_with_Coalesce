@@ -1850,12 +1850,12 @@ stepTypes:
             type: toggleButton
             default: true
 
-        -- - groupName: Data Vault
-        --   items:
-        --   - displayName: Generate Ghost Records
-        --     attributeName: generate_ghost_records
-        --     type: toggleButton
-        --     default: false
+        - groupName: Data Vault
+          items:
+          - displayName: Generate Ghost Records
+            attributeName: generate_ghost_records
+            type: toggleButton
+            default: true
 
         systemColumns:
         - displayName: "LDTS"
