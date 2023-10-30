@@ -148,7 +148,7 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 7ff87e6e-06b2-48f3-8f4c-b38cecef9490
+              columnCounter: c84a4da3-202e-47ec-9c3f-ad16ba0ba8cb
               stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
             config: {}
             dataType: STRING
@@ -159,11 +159,82 @@ steps:
             hashedColumns:
               - columnCounter: 8be1be04-7e9e-4de9-aabf-e3e14cef0607
                 stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
-            name: CUSTOMER_hk
+            name: HK_CUSTOMER_H
             nullable: true
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'DATABASE.SCHEMA.TABLE'"
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 92714614-2e16-4a6c-b833-43caa27be92a
+              stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: f3c25bda-20dc-4c09-941f-5f8a5bfbd0c5
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+            name: HK_NATION_H
+            nullable: true
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f6b2482b-7b56-41d3-8b40-aaffd37a30f2
+              stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 92714614-2e16-4a6c-b833-43caa27be92a
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+              - columnCounter: 3f864ab1-674c-4f67-ac1d-7482eea68ca3
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+              - columnCounter: 32b22279-a767-429f-b3c6-0b029f9b3e68
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+              - columnCounter: 8307fdfa-2e84-46e2-95f9-d496ca32e354
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+              - columnCounter: 4c450405-f1e8-4878-90f4-262e7f1d911a
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+              - columnCounter: f1616af2-9a9d-40c9-a942-ca0d54f7c6e2
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+              - columnCounter: 0218009c-5282-426d-b442-b442275cb184
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+            name: HD_CUSTOMER_S
+            nullable: true
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 35979c7b-049c-4b8d-b334-1f4c90aefc1f
+              stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: f6b2482b-7b56-41d3-8b40-aaffd37a30f2
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+              - columnCounter: 8be1be04-7e9e-4de9-aabf-e3e14cef0607
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+              - columnCounter: f3c25bda-20dc-4c09-941f-5f8a5bfbd0c5
+                stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
+            name: HK_CUSTOMER_NATION_S
+            nullable: true
+            sourceColumnReferences: []
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
