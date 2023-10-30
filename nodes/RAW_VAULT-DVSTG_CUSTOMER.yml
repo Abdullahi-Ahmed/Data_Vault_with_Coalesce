@@ -209,7 +209,7 @@ steps:
                 stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
               - columnCounter: 0218009c-5282-426d-b442-b442275cb184
                 stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
-            name: HD_CUSTOMER_S
+            name: HD_CUSTOMER_N_S
             nullable: true
             sourceColumnReferences: []
           - acceptedValues:
@@ -232,7 +232,7 @@ steps:
                 stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
               - columnCounter: f3c25bda-20dc-4c09-941f-5f8a5bfbd0c5
                 stepCounter: 0754c647-8e6a-4382-a8e4-2fb872745643
-            name: HK_CUSTOMER_NATION_S
+            name: HK_CUSTOMER_NATION_L
             nullable: true
             sourceColumnReferences: []
         cteString: ""

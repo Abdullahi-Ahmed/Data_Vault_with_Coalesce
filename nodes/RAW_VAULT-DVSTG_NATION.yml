@@ -18,8 +18,6 @@ steps:
               stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
             dataType: NUMBER(38,0)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: N_NATIONKEY
             nullable: false
             sourceColumnReferences:
@@ -32,8 +30,6 @@ steps:
               stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
             dataType: VARCHAR(25)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: N_NAME
             nullable: false
             sourceColumnReferences:
@@ -46,8 +42,6 @@ steps:
               stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
             dataType: NUMBER(38,0)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: N_REGIONKEY
             nullable: false
             sourceColumnReferences:
@@ -60,8 +54,6 @@ steps:
               stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
             dataType: VARCHAR(152)
             description: ""
-            hashColumns: []
-            hashDetails: null
             name: N_COMMENT
             nullable: true
             sourceColumnReferences:
@@ -80,7 +72,6 @@ steps:
             dataType: TIMESTAMP
             defaultValue: ""
             description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
-            hashColumns: []
             is_system_ldts: true
             name: LDTS
             nullable: true
@@ -98,13 +89,95 @@ steps:
             dataType: STRING
             defaultValue: ""
             description: The Record Source (RSRC) describes the source of this data.
-            hashColumns: []
             is_system_rsrc: true
             name: RSRC
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
-                transform: "{{record_source()}}"
+                transform: "'DATABASE.SCHEMA.TABLE'"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dc1f10b4-2087-478b-a0ca-74bcaf8f2bbc
+              stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: a0a9cae1-310c-45bb-9320-24c9969c4d51
+                stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
+            name: HK_NATION_H
+            nullable: true
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dc25b367-1649-4557-9005-23bb3244be8a
+              stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: f53ff3e8-598b-40ee-8fa2-d706222e42e3
+                stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
+            name: HK_REGION_H
+            nullable: true
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e28a89e7-ddfb-478c-8a9f-e5ecf7fd98aa
+              stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: 4c9ae417-995c-4492-aa4d-73d9301fecbe
+                stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
+              - columnCounter: b5971e0c-5034-4b47-a72f-bd8ae3ecc295
+                stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
+            name: HD_NATION_N_S
+            nullable: true
+            sourceColumnReferences: []
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d365223d-4189-4de3-aa35-36670f03592b
+              stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            hashDetails:
+              hashAlgorithm: SHA1
+            hashedColumns:
+              - columnCounter: a0a9cae1-310c-45bb-9320-24c9969c4d51
+                stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
+              - columnCounter: f53ff3e8-598b-40ee-8fa2-d706222e42e3
+                stepCounter: 5d9c92d5-dff8-48c7-8051-eba096a4e75a
+            name: HK_NATION_REGION_L
+            nullable: true
+            sourceColumnReferences: []
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
